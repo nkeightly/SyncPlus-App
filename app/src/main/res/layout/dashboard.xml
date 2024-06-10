@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:text="TextView"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Mon, Mar 21 2024" />
+
+    <!-- floating_widget_layout.xml -->
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        tools:text="Your Dashboard." />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="160dp"
+        tools:text="My Projects" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Welcome Waterfall" />
+
+    <RelativeLayout
+        android:id="@+id/floatingWidget"
+        android:layout_width="129dp"
+        android:layout_height="188dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:layout_toStartOf="@id/projectIcon"
+        android:background="@drawable/rounded_corner_background"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="233dp">
+
+
+        <ImageView
+            android:id="@+id/backgroundImage"
+            android:layout_width="129dp"
+            android:layout_height="188dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/widget_background_image" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="115dp"
+            android:layout_height="8dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="36dp"
+            android:max="100"
+            android:progress="50" />
+
+        <!-- Project Name TextView -->
+
+        <ImageView
+            android:id="@+id/projectIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_above="@+id/progressBar"
+            android:layout_alignEnd="@+id/backgroundImage"
+            android:layout_marginEnd="86dp"
+            android:layout_marginBottom="41dp"
+            android:src="@drawable/project_icon" />
+
+        <TextView
+            android:id="@+id/daysLeftTextView"
+            android:layout_width="70dp"
+            android:layout_height="28dp"
+            android:layout_above="@+id/progressBar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="94dp"
+            android:background="@drawable/rounded_corner_background"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:rotation="0"
+            android:text="10 days"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:translationZ="1dp" />
+
+        <TextView
+            android:id="@+id/projectNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/progressBar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="48dp"
+            android:text="Project Name"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="463dp"
+        tools:text="Tasks" />
+
+    <RadioGroup
+        android:id="@+id/taskRadioGroup"
+        android:layout_width="186dp"
+        android:layout_height="31dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="504dp">
+
+        <!-- Example of dynamically adding RadioButton -->
+        <!--<RadioButton
+            android:id="@+id/taskRadioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task 1" />-->
+
+        <!-- More RadioButtons will be dynamically added here based on tasks -->
+    </RadioGroup>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="2dp">
+
+
+
+        <LinearLayout
+            android:id="@+id/projectContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+            <!-- Project widgets will be dynamically added here -->
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

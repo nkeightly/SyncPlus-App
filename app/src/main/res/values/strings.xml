@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SyncPlus</string>
+    <string-array name="project_themes">
+        <item>Louis Vuitton Style</item>
+        <item>Nude Pink Pattern</item>
+        <item>Purple Texture</item>
+        <item>Doiley Pattern</item>
+        <item>Gold Pattern</item>
+        <item>Floral Pattern</item>
+        <item>Mix Pattern</item>
+        <item>Snow Pattern</item>
+        <item>Red Pattern</item>
+        <item>Orange Pattern</item>
+        <item>Purple Pattern</item>
+        <item>Texture Pattern</item>
+        <item>Blue Pattern</item>
+        <item>Pink Pattern</item>
+    </string-array>
+    <string name="project_theme_prompt">Select a project theme</string>
+</resources>

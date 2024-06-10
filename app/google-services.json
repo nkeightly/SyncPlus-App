@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "459790491930",
+    "project_id": "syncplus-64725",
+    "storage_bucket": "syncplus-64725.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459790491930:android:8b57d99ea35afd0498cca3",
+        "android_client_info": {
+          "package_name": "com.syncplus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBily-P5IxkU77tppTxE37F14pvINCD_KQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

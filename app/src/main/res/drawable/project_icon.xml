@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <!-- Project Icons -->
+    <item android:drawable="@drawable/ic_running" android:state_checked="true" />
+    <item android:drawable="@drawable/ic_video" android:state_checked="true" tools:ignore="StateListReachable" />
+    <item android:drawable="@drawable/ic_budget" android:state_checked="true" />
+    <item android:drawable="@drawable/ic_money" android:state_checked="true" />
+    <item android:drawable="@drawable/ic_confetti" android:state_checked="true" />
+    <item android:drawable="@drawable/ic_hands" android:state_checked="true" />
+    <item android:drawable="@drawable/ic_plant" android:state_checked="true" />
+    <item android:drawable="@drawable/ic_success" android:state_checked="true" />
+    <item android:drawable="@drawable/ic_thinking" android:state_checked="true" />
+    <item android:drawable="@drawable/ic_people" android:state_checked="true" />
+    <item android:drawable="@drawable/ic_design" android:state_checked="true" />
+    <item android:drawable="@drawable/ic_work" android:state_checked="true" />
+    <item android:drawable="@drawable/ic_notebook" android:state_checked="true" />
+    <item android:drawable="@drawable/ic_tracking" android:state_checked="true" />
+    <item android:drawable="@drawable/ic_travel" android:state_checked="true" />
+    <item android:drawable="@drawable/ic_c" android:state_checked="true" />
+    <item android:drawable="@drawable/ic_code" android:state_checked="true" />
+    <item android:drawable="@drawable/ic_default_icon" android:state_checked="true"/>
+</selector>

@@ -1,0 +1,7 @@
+<!-- res/values/dimens.xml -->
+<resources>
+    <dimen name="card_width">198dp</dimen>
+    <dimen name="card_height">141dp</dimen>
+    <dimen name="card_corner_radius">20dp</dimen>
+    <dimen name="card_elevation">20dp</dimen>
+</resources>

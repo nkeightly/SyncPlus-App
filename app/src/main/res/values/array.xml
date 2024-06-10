@@ -1,0 +1,22 @@
+<resources>
+    <string-array name="project_icons">
+        <item>Running</item>
+        <item>Video</item>
+        <item>Budget</item>
+        <item>Money</item>
+        <item>Confetti</item>
+        <item>Hands</item>
+        <item>Plant</item>
+        <item>Success</item>
+        <item>Thinking</item>
+        <item>People</item>
+        <item>Design</item>
+        <item>Work</item>
+        <item>Notebook</item>
+        <item>Tracking</item>
+        <item>Travel</item>
+        <item>C</item>
+        <item>Code</item>
+        <item>Default Icon</item>
+    </string-array>
+</resources>

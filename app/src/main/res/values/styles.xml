@@ -1,0 +1,10 @@
+<!-- res/values/styles.xml -->
+<resources>
+    <style name="CategoryCardStyle">
+        <item name="android:layout_width">198dp</item>
+        <item name="android:layout_height">141dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:radius">20dp</item>
+        <item name="android:elevation">20dp</item>
+    </style>
+</resources>

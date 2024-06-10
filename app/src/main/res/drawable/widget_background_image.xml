@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/pattern_lv" android:state_checked="true" />
+    <item android:drawable="@drawable/pattern_nude_pink" android:state_checked="true" />
+    <item android:drawable="@drawable/pattern_texture_purple" android:state_checked="true" />
+    <item android:drawable="@drawable/pattern_doiley" android:state_checked="true" />
+    <item android:drawable="@drawable/pattern_gold" android:state_checked="true" />
+    <item android:drawable="@drawable/pattern_floral" android:state_checked="true" />
+    <item android:drawable="@drawable/pattern_mix" android:state_checked="true" />
+    <item android:drawable="@drawable/pattern_snow" android:state_checked="true" />
+    <item android:drawable="@drawable/pattern_red" android:state_checked="true" />
+    <item android:drawable="@drawable/pattern_orange" android:state_checked="true" />
+    <item android:drawable="@drawable/pattern_purple" android:state_checked="true" />
+    <item android:drawable="@drawable/pattern_texture" android:state_checked="true" />
+    <item android:drawable="@drawable/pattern_blue" android:state_checked="true" />
+    <item android:drawable="@drawable/pattern_pink" android:state_checked="true" />
+    <!-- Default Image -->
+    <!-- item android:drawable="@drawable/default_background_image" / -->
+</selector>

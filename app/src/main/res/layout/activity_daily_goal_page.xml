@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/DailyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="New Daily Goal"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CalendarView
+        android:id="@+id/DateWidget"
+        android:layout_width="324dp"
+        android:layout_height="264dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DailyTitle" />
+
+    <TextView
+        android:id="@+id/minimumHoursTitle"
+        android:layout_width="141sp"
+        android:layout_height="36sp"
+        android:layout_marginTop="24dp"
+        android:padding="8dp"
+        android:text="Maximum Hours:"
+        android:textColor="#0CBAC0"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.837"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DateWidget" />
+
+    <EditText
+        android:id="@+id/MinHours"
+        android:layout_width="141sp"
+        android:layout_height="48sp"
+        android:background="@drawable/custom_input"
+        android:hint="02:00"
+        android:padding="8dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MinHoursTitle"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <TextView
+        android:id="@+id/MinHoursTitle"
+        android:layout_width="141dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        android:padding="8dp"
+        android:text="Minimum Hours:"
+        android:textColor="#0CBAC0"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DateWidget"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/MaxHours"
+        android:layout_width="141sp"
+        android:layout_height="48sp"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_input"
+        android:hint="12:00"
+        android:padding="8dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minimumHoursTitle" />
+
+    <TextView
+        android:id="@+id/TagsTitle"
+        android:layout_width="141dp"
+        android:layout_height="36dp"
+        android:padding="8dp"
+        android:text="Tags:"
+        android:textColor="#0CBAC0"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MinHours"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <EditText
+        android:id="@+id/TagsBox"
+        android:layout_width="326dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_input"
+        android:hint="OPSC7311"
+        android:padding="8dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TagsTitle" />
+
+    <Button
+        android:id="@+id/AddDailyGoalBtn"
+        android:layout_width="256dp"
+        android:layout_height="53dp"
+        android:backgroundTint="#0CBAC0"
+        android:text="Add Daily Goal"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.935"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFDF6FE"
+        android:contentDescription="Back Button"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

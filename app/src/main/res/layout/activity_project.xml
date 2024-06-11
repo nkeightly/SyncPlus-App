@@ -141,6 +141,7 @@
 
     <!-- Separate buttons for Create Category and Daily Goal -->
 
+    <!-- Buttons Section -->
     <LinearLayout
         android:id="@+id/buttonsLayout"
         android:layout_width="0dp"
@@ -148,14 +149,13 @@
         android:layout_marginTop="16dp"
         android:orientation="horizontal"
         android:padding="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@id/titleEditText"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/titleEditText">
+        app:layout_constraintEnd_toEndOf="parent">
 
         <Button
             android:id="@+id/createCategoryButton"
-            android:layout_width="153dp"
+            android:layout_width="0dp"
             android:layout_height="53dp"
             android:layout_weight="1"
             android:background="@drawable/cornered_buttons"
@@ -166,14 +166,14 @@
 
         <Button
             android:id="@+id/dailyGoalButton"
-            android:layout_width="150dp"
+            android:layout_width="0dp"
             android:layout_height="53dp"
             android:layout_weight="1"
-            android:text="Daily Goal"
             android:background="@drawable/cornered_buttons"
+            android:text="Daily Goal"
+            android:textColor="@color/white"
             android:textSize="16sp"
-            android:textStyle="bold"
-            android:textColor="@color/white"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 

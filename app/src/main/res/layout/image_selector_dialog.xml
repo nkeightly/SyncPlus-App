@@ -14,14 +14,16 @@
         android:text="Select Project Theme"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal" />
 
     <Spinner
         android:id="@+id/themeSpinner"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:prompt="@string/project_theme_prompt"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:padding="8dp" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -35,28 +37,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal">
 
         <Button
             android:id="@+id/attachImageButton"
-            android:layout_width="117dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="16dp"
+            android:layout_width="81dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
             android:background="@color/deepBlue"
             android:text="Attach Image"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/defaultBlue"
+            android:text="OK"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
 
     </LinearLayout>
-
-    <Button
-        android:id="@+id/okButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:layout_marginStart="16dp"
-        android:textColor="@color/white"
-        android:background="@color/defaultBlue"
-        android:text="OK" />
-
 </LinearLayout>

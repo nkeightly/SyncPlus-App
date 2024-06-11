@@ -4,6 +4,17 @@
     android:layout_height="match_parent"
     android:background="@color/light_gray">
 
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/imageView_back"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/back" />
+
     <TextView
         android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"

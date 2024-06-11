@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.ProgressBar
 import android.widget.TextView
@@ -26,6 +27,7 @@ class PieActivity : AppCompatActivity() {
     private lateinit var linearContainer: LinearLayout
     private lateinit var startDateEditText: EditText
     private lateinit var endDateEditText: EditText
+    private lateinit var backButton: ImageView
     private val calendar = Calendar.getInstance()
     private val db = FirebaseFirestore.getInstance()
 
@@ -39,7 +41,11 @@ class PieActivity : AppCompatActivity() {
 
         startDateEditText.setOnClickListener { showDatePickerDialog(startDateEditText) }
         endDateEditText.setOnClickListener { showDatePickerDialog(endDateEditText) }
+        backButton = findViewById(R.id.imageView_back)
 
+        backButton.setOnClickListener {
+            onBackPressed()
+        }
         val viewGraphButton: Button = findViewById(R.id.viewGraphButton)
         viewGraphButton.setOnClickListener {
             val intent = Intent(this, LineGraphActivity::class.java)

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -33,7 +34,7 @@ class LineGraphActivity : AppCompatActivity() {
     private lateinit var startDateEditText: EditText
     private lateinit var endDateEditText: EditText
     private lateinit var applyButton: Button
-    private lateinit var backButton: Button
+    private lateinit var backButton: ImageView
     private lateinit var startDateTitle: TextView
     private lateinit var endDateTitle: TextView
     private lateinit var totalHoursTextView: TextView
@@ -48,13 +49,13 @@ class LineGraphActivity : AppCompatActivity() {
         startDateEditText = findViewById(R.id.startDateEditText)
         endDateEditText = findViewById(R.id.endDateEditText)
         applyButton = findViewById(R.id.applyButton)
-        backButton = findViewById(R.id.backButton)
         startDateTitle = findViewById(R.id.startDateTitle)
         endDateTitle = findViewById(R.id.endDateTitle)
         totalHoursTextView = findViewById(R.id.totalHoursTextView)
+        backButton = findViewById(R.id.imageView_back)
 
         backButton.setOnClickListener {
-            finish()
+            onBackPressed()
         }
 
         applyButton.setOnClickListener {

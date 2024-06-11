@@ -191,13 +191,13 @@ class CategoryActivity : AppCompatActivity() {
     }
 
     private fun setHardcodedCardListeners() {
-        val cards = listOf<CardView>(
-            findViewById(R.id.card1),
-            findViewById(R.id.card2),
-            findViewById(R.id.card3),
-            findViewById(R.id.card4),
-            findViewById(R.id.card5),
-            findViewById(R.id.card6)
+        val cards = listOf(
+            findViewById<CardView>(R.id.card1),
+            findViewById<CardView>(R.id.card2),
+            findViewById<CardView>(R.id.card3),
+            findViewById<CardView>(R.id.card4),
+            findViewById<CardView>(R.id.card5),
+            findViewById<CardView>(R.id.card6)
         )
 
         val hardcodedCardClickListener = { view: CardView ->
@@ -210,7 +210,7 @@ class CategoryActivity : AppCompatActivity() {
         }
 
         cards.forEach { cardView ->
-            cardView.setOnClickListener { hardcodedCardClickListener(cardView) }
+            cardView?.setOnClickListener { hardcodedCardClickListener(cardView) }
         }
 
         // Initial visual state setup

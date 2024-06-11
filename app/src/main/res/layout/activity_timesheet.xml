@@ -18,7 +18,7 @@
     <!-- Date Pickers and Search Button -->
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="wrap_content"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/imageView_back"
         android:layout_marginStart="9dp"

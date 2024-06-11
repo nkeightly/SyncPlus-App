@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         val clickableSpan = object : ClickableSpan() {
             override fun onClick(widget: View) {
                 // Handle click action, navigate to SignUpActivity
-                startActivity(Intent(this@MainActivity, SignInActivity::class.java))
+                startActivity(Intent(this@MainActivity, SignUpActivity::class.java))
             }
         }
 
@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
         // Set onClickListener for the "Sign in" button
         signInButton.setOnClickListener {
             // Handle sign-in action, navigate to SignInActivity
-            startActivity(Intent(this@MainActivity, SignUpActivity::class.java))
+            startActivity(Intent(this@MainActivity, SignInActivity::class.java))
         }
     }
     override fun onResume() {
